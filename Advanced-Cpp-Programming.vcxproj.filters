@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Exceptions\Custom-Exceptions.cpp">
+    <ClCompile Include="Exceptions\Exception-Catching-Order.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
