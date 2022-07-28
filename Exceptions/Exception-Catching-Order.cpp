@@ -23,10 +23,14 @@ int main() {
 		{
 		goesWrong();
 		}
-		catch (exception& e) {
+		// We catch the bad_alloc exception first because
+		// it is a subclass of exception and will only run if bad_alloc is thrown
+		catch (bad_alloc &e) {
 			cout << e.what() << endl;
 		}
-		catch (bad_alloc& e) {
+		// We catch exception at the end because it is a base class and that we can
+		// catch any subclass/normal exception that is thrown but not defined before this catch
+		catch (exception &e) {
 			cout << e.what() << endl;
 		}
 		
