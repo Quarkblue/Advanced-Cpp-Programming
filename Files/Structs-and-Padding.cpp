@@ -20,7 +20,7 @@ int main() {
 
 	string filename = "test.bin";
 
-	// Write Binary file
+	// Writing in Binary file
 	
 	ofstream outfile;
 	
@@ -37,7 +37,7 @@ int main() {
 		cout << "Could not create file: " + filename;
 	}
 
-	// Read Binary file
+	// Reading Binary file
 	
 	Person SomeoneElse = {};
 	
