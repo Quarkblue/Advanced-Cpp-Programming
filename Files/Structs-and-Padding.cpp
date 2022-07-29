@@ -19,6 +19,8 @@ int main() {
 	Person someone = { "Frodo",220,0.8 };
 
 	string filename = "test.bin";
+
+	// Write Binary file
 	
 	ofstream outfile;
 	
@@ -34,6 +36,26 @@ int main() {
 	{
 		cout << "Could not create file: " + filename;
 	}
+
+	// Read Binary file
+	
+	Person SomeoneElse = {};
+	
+	ifstream inputfile;
+	
+	inputfile.open(filename, ios::binary);
+	
+	if (inputfile.is_open()) {
+		
+		inputfile.read(reinterpret_cast<char *>(&SomeoneElse),sizeof(Person));
+		
+		inputfile.close();
+	}
+	else {
+		cout << "Could not open file: " + filename;
+	}
+	
+	cout << SomeoneElse.name << ". " << SomeoneElse.age << ". " << SomeoneElse.height << endl;
 	
 	return 0;
 }
