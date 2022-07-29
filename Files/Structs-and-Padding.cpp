@@ -50,6 +50,7 @@ int main() {
 		inputfile.read(reinterpret_cast<char *>(&SomeoneElse),sizeof(Person));
 		
 		inputfile.close();
+		
 	}
 	else {
 		cout << "Could not open file: " + filename;
