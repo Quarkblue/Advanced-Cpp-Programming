@@ -1,5 +1,5 @@
 // Learn Advance C++ Programming
-// Vectors and memory
+// Vectors
 
 #include<iostream>
 #include<vector>
@@ -22,7 +22,10 @@ int main() {
 		cout << strings[i] << endl;
 	}*/
 	
+	// Get a pointer for the first element
 	//vector<string>::iterator it = strings.begin();
+	// Get a pointer for the last element
+	//vector<string>::iterator it = strings.end();
 	
 	/*for (vector<string>::iterator it = strings.begin(); it != strings.end(); it++) {
 		cout << *it << endl;
