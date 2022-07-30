@@ -20,9 +20,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Files\Structs-and-Padding.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Standard Template Library\Vectors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
