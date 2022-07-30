@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Standard Template Library\Vectors.cpp">
+    <ClCompile Include="Standard Template Library\Vectors-and-memory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
