@@ -16,8 +16,10 @@ int main() {
 	ages["raj"] = 20;
 	ages["vicki"] = 30;
 	
+	pair<string, int> addToMap("peter", 100);
 	
-
+	ages.insert(make_pair("peter", 100));
+	
 	cout << ages["raj"] << endl;
 	
 	if (ages.find("lol") != ages.end()) {
@@ -31,6 +33,13 @@ int main() {
 
 		cout << it->first << " : " << it->second << endl;
 		
+	}
+	
+	for (map<string, int>::iterator it = ages.begin(); it != ages.end(); it++) {
+		
+		pair<string, int> age = *it;
+			
+		cout << age.first << " : " << age.second << endl;
 	}
 
 	return 0;
