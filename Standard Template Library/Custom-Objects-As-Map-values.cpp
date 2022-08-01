@@ -31,6 +31,6 @@ int main() {
 	
 	people[0] = Person("Mike", 40);
 	people[1] = Person("John", 30);
-	people[2] = Person("Mary". 25);
+	people[2] = Person("Mary", 25);
 	
 }
