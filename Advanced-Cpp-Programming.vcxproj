@@ -131,7 +131,7 @@
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Standard Template Library\Lists.cpp" />
+    <ClCompile Include="Standard Template Library\menu.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
