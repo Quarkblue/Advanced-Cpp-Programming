@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Standard Template Library\menu.cpp">
+    <ClCompile Include="Standard Template Library\maps.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
