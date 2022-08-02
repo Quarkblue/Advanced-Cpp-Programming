@@ -131,7 +131,7 @@
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Standard Template Library\Custom-Objects-As-Map-values.cpp" />
+    <ClCompile Include="Standard Template Library\MultiMaps.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

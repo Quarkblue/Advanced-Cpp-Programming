@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Standard Template Library\Custom-Objects-As-Map-values.cpp">
+    <ClCompile Include="Standard Template Library\MultiMaps.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
