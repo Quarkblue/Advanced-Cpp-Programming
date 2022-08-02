@@ -30,25 +30,27 @@ public:
 	}
 
 	void print() const {
-		cout << name << " : " << age << endl;
+		cout << name << " : " << age << flush;
 	}
+
+	bool operator<(const Person& other) const;
+	
 };
 
 
 int main() {
 	
-	map<int, Person> people;
+	map<Person, int> people;
 	
-	people[0] = Person("Mike", 40);
-	people[1] = Person("John", 30);
-	people[2] = Person("Mary", 25);
+	people[Person("Mike", 40)] = 0;
+	people[Person("raj", 30)] = 1;
+	people[Person("sue", 20)] = 2;
 	
-	people.insert(make_pair(55, Person("Bob", 45)));
-	people.insert(make_pair(56, Person("Sue", 24)));
-	
-	for (map<int, Person>::iterator it = people.begin(); it != people.end(); it++) {
+	for (map<Person, int>::iterator it = people.begin(); it != people.end(); it++) {
 		
-		it->second.print();
+		cout << it->second << " : " << flush;
+		it->first.print();
+		
 	}
 	return 0;
 	
