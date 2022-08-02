@@ -33,7 +33,12 @@ public:
 		cout << name << " : " << age << flush;
 	}
 
-	bool operator<(const Person& other) const;
+	bool operator<(const Person& other) const {
+		if (name == other.name) {
+			return age < other.age;
+		}
+		return name < other.name;
+	}
 	
 };
 
@@ -43,6 +48,7 @@ int main() {
 	map<Person, int> people;
 	
 	people[Person("Mike", 40)] = 0;
+	people[Person("Mike", 404)] = 4;
 	people[Person("raj", 30)] = 1;
 	people[Person("sue", 20)] = 2;
 	
@@ -50,6 +56,7 @@ int main() {
 		
 		cout << it->second << " : " << flush;
 		it->first.print();
+		cout << endl;
 		
 	}
 	return 0;
