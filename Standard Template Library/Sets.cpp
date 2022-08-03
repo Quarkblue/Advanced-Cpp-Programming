@@ -8,6 +8,8 @@ using namespace std;
 
 int main() {
 	
+	set<int> numbers;
+	
 	
 	
 	return 0;
