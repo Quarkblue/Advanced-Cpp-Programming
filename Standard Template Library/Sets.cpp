@@ -12,9 +12,9 @@ class Test
 	string name;
 public:
 
-	/*Test(): id(0),name("") {
+	Test(): id(0),name("") {
 
-	}*/
+	}
 
 	Test(int id, string name) : id(id), name(name) {
 		
