@@ -11,12 +11,21 @@ class Test
 	int id;
 	string name;
 public:
+
+	/*Test(): id(0),name("") {
+
+	}*/
+
 	Test(int id, string name) : id(id), name(name) {
 		
 	}
 
-	void print() {
+	void print() const {
 		cout << id << " : " << name << endl;
+	}
+
+	bool operator<(const Test &other) const {
+		return name < other.name;
 	}
 
 };
@@ -46,6 +55,16 @@ int main() {
 		cout << "Found: " << 30 << endl;
 	}
 
+	set<Test> tests;
+	
+	tests.insert(Test(10, "Mike"));
+	tests.insert(Test(30, "sue"));
+	tests.insert(Test(20, "joe"));
+
+	for (set<Test>::iterator it = tests.begin(); it != tests.end(); it++) {
+
+		it->print();
+	}
 	
 	
 	return 0;
