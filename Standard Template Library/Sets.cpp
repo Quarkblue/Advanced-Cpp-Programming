@@ -6,6 +6,22 @@
 
 using namespace std;
 
+class Test
+{
+	int id;
+	string name;
+public:
+	Test(int id, string name) : id(id), name(name) {
+		
+	}
+
+	void print() {
+		cout << id << " : " << name << endl;
+	}
+
+};
+
+
 int main() {
 	
 	set<int> numbers;
