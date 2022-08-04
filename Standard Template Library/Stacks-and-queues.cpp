@@ -61,9 +61,12 @@ int main() {
 	testQueue.push(Test("john"));
 	testQueue.push(Test("sue"));
 	
+	testQueue.back().print();
+	cout << endl;
+	
 	while (testQueue.size() > 0)
 	{
-		Test& test = testStack.top();
+		Test& test = testQueue.front();
 		test.print();
 		testQueue.pop();
 	}
