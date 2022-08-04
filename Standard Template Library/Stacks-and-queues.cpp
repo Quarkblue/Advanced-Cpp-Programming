@@ -17,7 +17,7 @@ public:
 			
 		}
 	~Test() {
-		// cout << "Object destroyed" << endl;
+		 //cout << "Object destroyed" << endl;
 	}
 	void print() {
 		cout << name << endl;
@@ -33,9 +33,42 @@ int main() {
 	testStack.push(Test("john"));
 	testStack.push(Test("sue"));
 	
-	Test test1 = testStack.top();
-	test1.print();
 
+	
+	/*
+	* This is invalid code the object is destroyed and the reference doesn't work
+	Test &test1 = testStack.top();
+	testStack.pop();
+	test1.print();
+	Reference refers to destroy objects
+	*/
+	
+	while (testStack.size() > 0) {
+		
+		Test& test = testStack.top();
+		test.print();
+		testStack.pop();
+
+	}
+
+	cout << endl;
+	
+	//FIFO
+
+	queue<Test> testQueue;
+	
+	testQueue.push(Test("Mike"));
+	testQueue.push(Test("john"));
+	testQueue.push(Test("sue"));
+	
+	while (testQueue.size() > 0)
+	{
+		Test& test = testStack.top();
+		test.print();
+		testQueue.pop();
+	}
+	
+	
 	return 0;
 	
 }
