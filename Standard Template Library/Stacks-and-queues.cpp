@@ -26,7 +26,16 @@ public:
 
 int main() {
 	
+	//LIFO
+	stack<Test> testStack;
 	
+	testStack.push(Test("Mike"));
+	testStack.push(Test("john"));
+	testStack.push(Test("sue"));
+	
+	Test test1 = testStack.top();
+	test1.print();
 
 	return 0;
+	
 }
