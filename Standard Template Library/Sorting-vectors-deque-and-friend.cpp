@@ -18,7 +18,13 @@ public:
 	}
 
 	bool operator<(const Test& other) const {
-		return id < other.id;
+		if (name == other.name) {
+			return id < other.id;
+		}
+		else {
+			return name < other.name;
+		}
+		
 	}
 	
 };
