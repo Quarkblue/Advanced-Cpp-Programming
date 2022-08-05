@@ -17,7 +17,7 @@ public:
 		cout << id << " : " << name << endl;
 	}
 
-	bool operator<(const Test& other) const {
+	/*bool operator<(const Test& other) const {
 		if (name == other.name) {
 			return id < other.id;
 		}
@@ -25,10 +25,15 @@ public:
 			return name < other.name;
 		}
 		
-	}
+	}*/
+
+	friend bool comp(const Test& a, const Test& b);
 	
 };
 
+bool comp(const Test& a, const Test& b) {
+	return a.name < b.name;
+}
 
 int main() {
 
@@ -39,7 +44,7 @@ int main() {
 	tests.push_back(Test(7, "Raj"));
 	tests.push_back(Test(3, "vicky"));
 
-	sort(tests.begin(), tests.end());
+	sort(tests.begin(), tests.end(), comp);
 
 	for (int i = 0; i < tests.size(); i++){
 		tests[i].print();
