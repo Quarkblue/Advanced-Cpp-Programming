@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include<vector>
+#include<algorithm>
 
 using namespace std;
 
@@ -26,6 +27,8 @@ int main() {
 	tests.push_back(Test(10, "Sue"));
 	tests.push_back(Test(7, "Raj"));
 	tests.push_back(Test(3, "vicky"));
+
+	sort(tests.begin(), tests.end());
 
 	for (int i = 0; i < tests.size(); i++){
 		tests[i].print();
