@@ -32,6 +32,11 @@ public:
 		return *this;
 	}
 	
+	Test(const Test& other) {
+		cout << "Copy Constructor Running" << endl;
+		*this = other;
+	}
+	
 };
 
 int main() {
