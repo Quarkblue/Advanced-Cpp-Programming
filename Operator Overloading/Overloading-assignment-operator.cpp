@@ -48,6 +48,10 @@ int main() {
 	
 	test2 = test1;
 	test2.print();
+
+	// Copy initialization
+	Test test3 = test1;
+	
 	
 	return 0;
 }
