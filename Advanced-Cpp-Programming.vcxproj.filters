@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Standard Template Library\STL-complex-datatypes.cpp">
+    <ClCompile Include="Operator Overloading\Overloading-assignment-operator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
