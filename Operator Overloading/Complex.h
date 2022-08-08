@@ -12,6 +12,9 @@ namespace AdvancedCppProgramming {
 		
 	public:
 		Complex();
+		Complex(double real, double imaginary);
+		
+		Complex(const Complex& other);
 	};
 
 }
