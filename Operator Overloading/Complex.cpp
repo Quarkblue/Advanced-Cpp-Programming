@@ -1,8 +1,13 @@
 #include "Complex.h"
 
-
 namespace AdvancedCppProgramming {
 	
+	ostream& operator<<(ostream& out, const Complex& c) {
+		out << "(" << c.getReal() << "." << c.getImaginary() << ")";
+		return out;
+	
+	}
+
 	Complex::Complex() : real(0), imaginary(0) {
 		
 	}
@@ -15,5 +20,13 @@ namespace AdvancedCppProgramming {
 		real = other.real;
 		imaginary = other.imaginary;
 	}
+
+	const Complex &Complex::operator=(const Complex& other) {
+		real = other.real;
+		imaginary = other.imaginary;
+
+		return *this;
+	}
+
 
 }
