@@ -20,9 +20,6 @@ public:
 
 	}
 	
-	void print() {
-		cout << id << " : " << name << endl;
-	}
 
 	const Test& operator=(const Test& other) {
 		id = other.id;
