@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Operator Overloading\Overloading-assignment-operator.cpp">
+    <ClCompile Include="Operator Overloading\Overloading-left-bit-shift.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
