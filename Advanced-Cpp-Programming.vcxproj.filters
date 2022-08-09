@@ -26,7 +26,7 @@
     <ClCompile Include="Operator Overloading\Complex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Operator Overloading\Overloading-equality-test.cpp">
+    <ClCompile Include="Operator Overloading\Overloading-derefrence-operator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
