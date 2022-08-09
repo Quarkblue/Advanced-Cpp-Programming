@@ -8,6 +8,10 @@ namespace AdvancedCppProgramming {
 	
 	}
 
+	Complex operator+(const Complex& c1, const Complex& c2) {
+		return Complex(c1.getReal() + c2.getReal(), c2.getImaginary() + c1.getImaginary());
+	}
+	
 	Complex::Complex() : real(0), imaginary(0) {
 		
 	}

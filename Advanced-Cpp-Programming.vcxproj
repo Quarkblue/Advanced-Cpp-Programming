@@ -128,11 +128,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Operator Overloading\Complex.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Operator Overloading\Overloading-assignment-operator.cpp" />
-    <ClCompile Include="Operator Overloading\Overloading-left-bit-shift.cpp" />
+    <ClCompile Include="Operator Overloading\Complex.cpp" />
     <ClCompile Include="Operator Overloading\Overloading-plus.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

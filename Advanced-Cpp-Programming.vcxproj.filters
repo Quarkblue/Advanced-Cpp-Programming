@@ -18,15 +18,15 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Operator Overloading\Complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Operator Overloading\Overloading-assignment-operator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Operator Overloading\Overloading-left-bit-shift.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Operator Overloading\Overloading-plus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Operator Overloading\Complex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
