@@ -21,6 +21,10 @@ namespace AdvancedCppProgramming {
 
 		double getReal() const { return real; }
 		double getImaginary() const { return imaginary; }
+	
+		bool operator==(const Complex& other) const;
+		bool operator!=(const Complex& other) const;
+		
 	};
 
 	ostream& operator<<(ostream& out, const Complex& c);
