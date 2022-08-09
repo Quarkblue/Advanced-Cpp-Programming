@@ -21,12 +21,15 @@
     <ClInclude Include="Operator Overloading\Complex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Template Classes and Functions\Template-class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Operator Overloading\Complex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Operator Overloading\Overloading-derefrence-operator.cpp">
+    <ClCompile Include="Template Classes and Functions\Template-classes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
