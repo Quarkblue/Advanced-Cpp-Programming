@@ -20,7 +20,18 @@ namespace AdvancedCppProgramming {
 		void print() {
 			cout << obj << endl;
 		}
+		
+		template<class U>
+		friend ostream& operator<<(ostream& out, const Test<U>& c);
+		
 	};
+
+	template<class T>
+	ostream& operator<<(ostream& out, const Test<T>& c) {
+		out << c.obj;
+		return out;
+	}
+	
 }
 
 
