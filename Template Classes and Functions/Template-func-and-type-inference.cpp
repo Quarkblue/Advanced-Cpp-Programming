@@ -15,12 +15,21 @@ void print(int value) {
 	cout << "Non template: " << value << endl;
 }
 
+template<class T>
+void show() {
+
+	cout << T() << endl;
+}
+
+
 int main() {
 
 	print<string>("Hello");
 	print("Hello there");
 
 	print(6);
+	
+	show<int>();
 
 	return 0;
 }
