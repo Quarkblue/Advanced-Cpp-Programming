@@ -6,6 +6,11 @@
 
 using namespace std;
 
+template<class T>
+void print(T n) {
+	cout << n << endl;
+}
+
 
 int main() {
 
