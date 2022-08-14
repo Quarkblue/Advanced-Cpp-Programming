@@ -134,7 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Operator Overloading\Complex.cpp" />
-    <ClCompile Include="Template Classes and Functions\Template-classes.cpp" />
+    <ClCompile Include="Template Classes and Functions\Template-function.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
