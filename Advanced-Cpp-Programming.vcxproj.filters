@@ -29,7 +29,7 @@
     <ClCompile Include="Operator Overloading\Complex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Template Classes and Functions\Template-function.cpp">
+    <ClCompile Include="Template Classes and Functions\Template-func-and-type-inference.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
