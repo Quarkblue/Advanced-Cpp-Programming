@@ -9,7 +9,7 @@ using namespace std;
 
 namespace AdvancedCppProgramming {
 	
-	template<class T, class K>
+	template<class T>
 	class Test {
 	private:
 		T obj;
