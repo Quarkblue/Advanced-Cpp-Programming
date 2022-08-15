@@ -11,8 +11,11 @@ void test() {
 }
 
 int main() {
-
 	test();
+
+	void (*pTest)() = test;
+
+	pTest();
 
 	return 0;
 }

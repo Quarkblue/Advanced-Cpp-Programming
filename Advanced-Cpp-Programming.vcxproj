@@ -134,7 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Operator Overloading\Complex.cpp" />
-    <ClCompile Include="Template Classes and Functions\Template-func-and-type-inference.cpp" />
+    <ClCompile Include="Passing functions to functions\Function-pointers.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
