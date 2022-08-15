@@ -5,17 +5,18 @@
 
 using namespace std;
 
-void test() {
+void test(string name) {
 	
-	cout << "test()" << endl;
+	cout << "Hello: " << name << endl;
 }
 
 int main() {
-	test();
 
-	void (*pTest)() = test;
+	void (*pTest)(string) = test;
 
-	pTest();
+	string name = "quark";
+	
+	pTest(name);
 
 	return 0;
 }
