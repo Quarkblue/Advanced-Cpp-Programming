@@ -1,5 +1,5 @@
 // Learn Advance C++ Programming
-// Passing functions to functions
+// Function pointers
 
 #include<iostream>
 
