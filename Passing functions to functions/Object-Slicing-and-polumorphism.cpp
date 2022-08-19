@@ -7,9 +7,23 @@ using namespace std;
 
 class Parent {
 public:
+	
+	Parent() {
+		
+	}
+	
+	Parent(const Parent &other) {
+		cout << "Copy parent" << endl;
+	}
+
 	virtual void print() {
 		cout << "parent" << endl;
 	}
+	
+	virtual ~Parent() {
+		
+	}
+	
 };
 
 class Child : public Parent {
