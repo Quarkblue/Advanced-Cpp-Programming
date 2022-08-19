@@ -13,6 +13,17 @@ bool match(string test) {
 	return test.size() == 3;
 }
 
+int countStrings(vector<string>& texts, bool(*match)(string test)) {
+	int tally = 0;
+	for (int i = 0; i < texts.size(); i++) {
+
+		if (match(texts[i]))	 {
+			tally++;
+		}
+		
+	}
+	return tally;
+}
 
 int main() {
 	
@@ -27,6 +38,8 @@ int main() {
 	cout << match("one") << endl;
 
 	cout << count_if(texts.begin(), texts.end(), match) << endl;
+
+	cout << countStrings(texts, match) << endl;
 
 	return 0;
 }
