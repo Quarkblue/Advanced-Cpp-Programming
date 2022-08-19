@@ -7,7 +7,7 @@ using namespace std;
 
 class Parent {
 public:
-	void print() {
+	virtual void print() {
 		cout << "parent" << endl;
 	}
 };
@@ -21,7 +21,12 @@ public:
 
 int main() {
 
+	Child c1;
+	Parent& p1 = c1;
+	p1.print();
 
+	Parent p2 = Child();
+	p2.print();
 	
 	return 0;
 }
