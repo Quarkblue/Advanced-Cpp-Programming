@@ -32,14 +32,33 @@ public:
 	}
 };
 
+void test(Animal& a) {
+	a.run();
+}
 
 int main() {
 
 	Labrador labs[5];
 	
 	Labrador labra;
-	labra.speak();
-	labra.run();
+
+	/* Animal is an abstract class
+	and you cannot instantiate it
+	nor can you make an array from it
+	you can make a vector of an abstract class but
+	won't be able to add elements to it
+	but you can make a pointer to that abstract
+	class and add other classes that are derived from
+	that abstract class.
+	eg:-*/
+
+	Animal* animals[5];
+	animals[0] = &labra;
+	
+	animals[0]->speak();
+	animals[0]->run();
+	
+	test(labra);
 
 	return 0;
 }
