@@ -9,6 +9,7 @@ using namespace std;
 // A class that contains pure virtual functions is called an Abstract class
 class Animal {
 public:
+	virtual void run() = 0; // A pure virtual function
 	virtual void speak() = 0; // A pure virtual function
 	
 	
@@ -16,16 +17,29 @@ public:
 
 class Dog: public Animal {
 public:
-	virtual void speak() {
+	virtual void speak() {   // Must fulfill the pure virtual function
 		cout << "Woof!" << endl;
+	}
+};
+
+class Labrador : public Dog {
+public:
+	Labrador() {
+		cout << "New labrador" << endl;
+	}
+	virtual void run() {
+		cout << "Labrador is running" << endl;
 	}
 };
 
 
 int main() {
+
+	Labrador labs[5];
 	
-	Dog dog;
-	dog.speak();
+	Labrador labra;
+	labra.speak();
+	labra.run();
 
 	return 0;
 }
