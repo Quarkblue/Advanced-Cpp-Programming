@@ -29,7 +29,7 @@
     <ClCompile Include="Operator Overloading\Complex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Passing functions to functions\Abstract-classes-and-pure-virtual-functions.cpp">
+    <ClCompile Include="Passing functions to functions\Functors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
