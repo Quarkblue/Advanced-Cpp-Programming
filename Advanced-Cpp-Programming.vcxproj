@@ -134,7 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Operator Overloading\Complex.cpp" />
-    <ClCompile Include="Passing functions to functions\Object-Slicing-and-polumorphism.cpp" />
+    <ClCompile Include="Passing functions to functions\Abstract-classes-and-pure-virtual-functions.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
