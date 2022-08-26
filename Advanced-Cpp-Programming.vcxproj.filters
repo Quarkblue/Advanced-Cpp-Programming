@@ -29,7 +29,7 @@
     <ClCompile Include="Operator Overloading\Complex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cpp%2711 New features\Dcltype-typeid-nameMangeling.cpp">
+    <ClCompile Include="Cpp%2711 New features\Auto-keyword.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
