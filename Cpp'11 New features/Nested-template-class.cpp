@@ -9,10 +9,10 @@ using namespace std;
 
 int main() {
 
-	Ring<string> textring;
+	/*Ring<string> textring;
 	textring.add("one");
 
-	for()
+	for()*/
 	
 	return 0;
 }
