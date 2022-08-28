@@ -4,9 +4,6 @@
 
 class Ring
 {
-public:
-	Ring();
-	virtual ~Ring();
 };
 
 #endif // !RING_H_
