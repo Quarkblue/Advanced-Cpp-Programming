@@ -24,12 +24,15 @@
     <ClInclude Include="Template Classes and Functions\Template-class.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Cpp%2711 New features\Ring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Operator Overloading\Complex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cpp%2711 New features\range-based-loops.cpp">
+    <ClCompile Include="Cpp%2711 New features\Nested-template-class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

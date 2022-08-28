@@ -9,6 +9,11 @@ using namespace std;
 
 int main() {
 
+	Ring<string>::iterator it;
+	
+	it.print();
+	
+
 	/*Ring<string> textring;
 	textring.add("one");
 
