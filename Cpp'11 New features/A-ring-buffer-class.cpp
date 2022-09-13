@@ -14,10 +14,13 @@ int main() {
 	textring.add("four");
 	textring.add("five");
 
+
+	// C++ 98 style
 	for (ring<string>::iterator it = textring.begin(); it != textring.end(); it++) {
 		cout << *it << endl;
 	}
 	
+	// C++ 11 style
 	for (auto value : textring) {
 		cout << value << endl;
 	}
