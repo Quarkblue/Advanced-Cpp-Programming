@@ -18,7 +18,7 @@ int main() {
 		cout << *it << endl;
 	}
 	
-	for (string value : textring) {
+	for (auto value : textring) {
 		cout << value << endl;
 	}
 
