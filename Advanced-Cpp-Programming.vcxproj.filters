@@ -32,7 +32,7 @@
     <ClCompile Include="Operator Overloading\Complex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cpp%2711 New features\Initializing-in-cpp-98.cpp">
+    <ClCompile Include="Cpp%2711 New features\Initializing-in-cpp-11.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
