@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 
 using namespace std;
 
@@ -20,6 +21,11 @@ int main() {
 	};
 	
 	C c1 = {"Hello", 7};
+
+	vector<string> strings;
+	
+	strings.push_back("one");
+	
 	
 	return 0;
 }
