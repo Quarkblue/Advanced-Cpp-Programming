@@ -25,6 +25,8 @@ int main() {
 	cout << numbers[2] << endl;
 	
 	Test test{ "Hello", "how", "are", "you" };
+	
+	test.print({ "one","two","three" });
 
 	return 0;
 }
