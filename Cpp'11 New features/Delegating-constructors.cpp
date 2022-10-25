@@ -11,7 +11,7 @@ class Parent {
 	string text;
 	
 public:
-	Parent() {
+	Parent(): Parent("Hello") {
 		dogs = 5;
 		cout << "No parameter parent constructor" << endl;
 	}
@@ -26,16 +26,14 @@ public:
 class  Child : public Parent {
 
 public:
-	Child(): Parent("Hello") {
-		
-	}
+	Child() = default;
 	
 };
 
 
 int main() {
 
-	Parent parent;
+	Parent parent("Hello");
 	Child child;
 	return 0;
 	

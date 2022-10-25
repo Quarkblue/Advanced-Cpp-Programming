@@ -134,7 +134,7 @@
     <ClInclude Include="Template Classes and Functions\Template-class.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Cpp%2711 New features\mutable-lambda.cpp" />
+    <ClCompile Include="Cpp%2711 New features\Delegating-constructors.cpp" />
     <ClCompile Include="Operator Overloading\Complex.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
