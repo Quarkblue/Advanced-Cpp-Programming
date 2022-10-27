@@ -86,12 +86,16 @@ int main() {
 
 	Test* pTest1 = &test1;
 
-	int* pValue3 = &value1;
-
-	cout << *pValue3 << endl;
+	int* pValue3 = &++value1;
 
 	// int* pValue4 = &value1++; // Not Happening because value1++ is an Rvalue.
 
+	Test& rTest1 = test1;
+
+	// Test& rTest2 = getTest();
+	
+	const Test& rTest2 = getTest();
+	
 	return 0;
 }
 
