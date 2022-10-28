@@ -78,7 +78,9 @@ int main() {
 	vector<Test> vec;
 	vec.push_back(Test());
 
-	
+	Test& ltest1 = test1;
+
+	Test&& rtest1 = getTest();
 	
 
 
