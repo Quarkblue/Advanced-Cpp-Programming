@@ -78,23 +78,10 @@ int main() {
 	vector<Test> vec;
 	vec.push_back(Test());
 
-	int value1 = 7;
-
-	int* pValue1 = &value1;
-
-	// int * pValue2 = &7 // Not happening cause Rvalue
-
-	Test* pTest1 = &test1;
-
-	int* pValue3 = &++value1;
-
-	// int* pValue4 = &value1++; // Not Happening because value1++ is an Rvalue.
-
-	Test& rTest1 = test1;
-
-	// Test& rTest2 = getTest();
 	
-	const Test& rTest2 = getTest();
+	
+
+
 	
 	return 0;
 }
