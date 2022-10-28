@@ -70,6 +70,14 @@ Test getTest() {
 	return Test();
 }
 
+void check(const Test &value) {
+	cout << "lValue function" << endl;
+}
+
+void check(Test&& value) {
+	cout << "rValue function" << endl;
+}
+
 int main() {
 
 	Test test1 = getTest();
@@ -81,8 +89,9 @@ int main() {
 	Test& ltest1 = test1;
 
 	Test&& rtest1 = getTest();
-	
 
+	check(test1);
+	check(getTest());
 
 	
 	return 0;
