@@ -9,7 +9,7 @@ using namespace std;
 class Test {
 private:
 	static const int SIZE = 100;
-	int* _pBuffer;
+	int* _pBuffer{nullptr};
 
 public:
 	Test() {
@@ -26,6 +26,14 @@ public:
 	Test(const Test& other) {
 		_pBuffer = new int[SIZE] {};
 		memcpy(_pBuffer, other._pBuffer, SIZE * sizeof(int));
+	}
+
+
+	// Move Constructor
+	Test(Test&& other) {
+		cout << "Move Constructor" << endl;
+		_pBuffer = other._pBuffer;
+		other._pBuffer = nullptr;
 	}
 
 	Test& operator=(const Test& other) {
@@ -51,8 +59,6 @@ Test getTest() {
 }
 
 int main() {
-
-
 	vector<Test> vec;
 	vec.push_back(Test());
 
