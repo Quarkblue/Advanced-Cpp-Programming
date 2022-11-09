@@ -2,6 +2,7 @@
 // Unique Pointers
 
 #include<iostream>
+#include<memory>
 using namespace std;
 
 class Test {
@@ -23,8 +24,11 @@ public:
 
 int main() {
 
-	cout << "Finished" << endl;
+	unique_ptr<Test> pTest(new Test);
 
+	pTest->greet();
+	
+	cout << "Finished" << endl;
 	
 	return 0;
 }
