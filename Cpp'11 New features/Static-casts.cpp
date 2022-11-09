@@ -24,6 +24,21 @@ int main() {
 	Parent parent;
 	Brother brother;
 
+	Parent* pParent = &brother; // Works
+
+	//Brother* pBrother = &parent // Does not work
+
+	// How to make it work?
+	// Unsafe btw
+	Brother* pBrother = static_cast<Brother*>(&parent);
+
+	Parent* pPBrother = &brother;
+	
+	Brother* pBBrother = static_cast<Brother *>(pPBrother);
+
+	cout << pPBrother << endl;
+
+	cout << pBrother << endl;
 
 	return 0;
 }
