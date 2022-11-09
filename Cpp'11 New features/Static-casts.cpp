@@ -40,7 +40,7 @@ int main() {
 
 	cout << pBrother << endl;
 	
-	Parent&& p = Parent();
+	Parent&& p = static_cast<Parent &&>(parent);
 
 	return 0;
 }
