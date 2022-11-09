@@ -39,6 +39,8 @@ int main() {
 	cout << pPBrother << endl;
 
 	cout << pBrother << endl;
+	
+	Parent&& p = Parent();
 
 	return 0;
 }
