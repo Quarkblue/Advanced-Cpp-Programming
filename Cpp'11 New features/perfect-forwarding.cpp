@@ -9,6 +9,11 @@ class Test {
 	
 };
 
+template<typename T>
+void call(T&& arg) {
+	check(forward<T>(arg));
+}
+
 void check(Test& test) {
 	cout << "lvalue" << endl;
 }
@@ -20,6 +25,9 @@ void check(Test&& test) {
 
 int main() {
 
+	Test test;
+	
+	check(test);
 
 	return 0;
 }
