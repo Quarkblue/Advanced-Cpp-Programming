@@ -1,5 +1,5 @@
 // Learn Advanced C++ Programming
-// Move Constructors
+// Move Assignment Operator
 
 #include<iostream>
 #include<vector>
@@ -42,6 +42,15 @@ public:
 		return *this;
 	}
 
+	Test& operator=(Test&& other) {
+		cout << "Move Assignment operator" << endl;
+		delete[] _pBuffer;
+		_pBuffer = other._pBuffer;
+		other._pBuffer = nullptr;
+		
+		return *this;
+	}
+
 	~Test() {
 		delete[] _pBuffer;
 	}
@@ -62,6 +71,9 @@ int main() {
 	vector<Test> vec;
 	vec.push_back(Test());
 
+	Test test;
+	
+	test = getTest();
 
 
 	return 0;
