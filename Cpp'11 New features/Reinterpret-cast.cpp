@@ -25,10 +25,11 @@ int main() {
 
 	Parent parent;
 	Brother brother;
+	Sister sister;
 
 	Parent* pPBrother = &brother;
 
-	Brother* pBBrother = dynamic_cast<Brother*>(pPBrother);
+	Sister* pBBrother = reinterpret_cast<Sister*>(pPBrother);
 
 	if (pBBrother == nullptr) {
 		cout << "Invalid Cast" << endl;
