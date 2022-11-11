@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Fractal Images\BitmapFileHeader.h" />
+    <ClInclude Include="Fractal Images\BitmapInfoHeader.h" />
     <ClInclude Include="Operator Overloading\Complex.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Cpp%2711 New features\Ring.h" />

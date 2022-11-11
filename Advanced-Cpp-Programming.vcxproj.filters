@@ -30,6 +30,9 @@
     <ClInclude Include="Fractal Images\BitmapFileHeader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Fractal Images\BitmapInfoHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Operator Overloading\Complex.cpp">
