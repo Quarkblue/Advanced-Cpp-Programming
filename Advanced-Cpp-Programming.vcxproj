@@ -128,13 +128,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Fractal Images\BitmapFileHeader.h" />
     <ClInclude Include="Operator Overloading\Complex.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Cpp%2711 New features\Ring.h" />
     <ClInclude Include="Template Classes and Functions\Template-class.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Cpp%2711 New features\Shared-pointers.cpp" />
+    <ClCompile Include="Fractal Images\Fractal.cpp" />
     <ClCompile Include="Operator Overloading\Complex.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -27,12 +27,15 @@
     <ClInclude Include="Cpp%2711 New features\Ring.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Fractal Images\BitmapFileHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Operator Overloading\Complex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cpp%2711 New features\Shared-pointers.cpp">
+    <ClCompile Include="Fractal Images\Fractal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
