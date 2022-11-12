@@ -128,6 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Fractal Images\Bitmap.h" />
     <ClInclude Include="Fractal Images\BitmapFileHeader.h" />
     <ClInclude Include="Fractal Images\BitmapInfoHeader.h" />
     <ClInclude Include="Operator Overloading\Complex.h" />
@@ -136,7 +137,8 @@
     <ClInclude Include="Template Classes and Functions\Template-class.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Fractal Images\Fractal.cpp" />
+    <ClCompile Include="Fractal Images\Bitmap.cpp" />
+    <ClCompile Include="Fractal Images\main.cpp" />
     <ClCompile Include="Operator Overloading\Complex.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

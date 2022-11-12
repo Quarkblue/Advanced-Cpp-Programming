@@ -1,10 +1,12 @@
 // Learn Advanced C++ Programming
-// Bitmap File Headers
+// Main
 
 #include<iostream>
 #include"BitmapFileHeader.h"
+#include"BitmapInfoHeader.h"
 
 using namespace std;
+using namespace fractal;
 
 int main() {
 	cout << "Hello World" << endl;
