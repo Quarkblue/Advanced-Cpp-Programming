@@ -131,6 +131,7 @@
     <ClInclude Include="Fractal Images\Bitmap.h" />
     <ClInclude Include="Fractal Images\BitmapFileHeader.h" />
     <ClInclude Include="Fractal Images\BitmapInfoHeader.h" />
+    <ClInclude Include="Fractal Images\Mandelbrot.h" />
     <ClInclude Include="Operator Overloading\Complex.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Cpp%2711 New features\Ring.h" />
@@ -139,6 +140,7 @@
   <ItemGroup>
     <ClCompile Include="Fractal Images\Bitmap.cpp" />
     <ClCompile Include="Fractal Images\main.cpp" />
+    <ClCompile Include="Fractal Images\Mandelbrot.cpp" />
     <ClCompile Include="Operator Overloading\Complex.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

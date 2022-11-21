@@ -36,6 +36,9 @@
     <ClInclude Include="Fractal Images\Bitmap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Fractal Images\Mandelbrot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Operator Overloading\Complex.cpp">
@@ -45,6 +48,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Fractal Images\Bitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Fractal Images\Mandelbrot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,6 +1,10 @@
+#include<complex>
 #include "Mandelbrot.h"
 
+using namespace std;
+
 namespace fractal{
+	
 	Mandelbrot::Mandelbrot() {
 		
 	}
@@ -11,6 +15,9 @@ namespace fractal{
 	
 
 	int Mandelbrot::getIteration(double x, double y) {
+		
+		
+		
 		return 0;
 	}
 
