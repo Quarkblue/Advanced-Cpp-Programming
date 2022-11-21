@@ -7,6 +7,8 @@
 using namespace std;
 using namespace fractal;
 
+
+
 int main() {
 
 	int const WIDTH = 800;
