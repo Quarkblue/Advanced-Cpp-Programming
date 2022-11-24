@@ -3,6 +3,8 @@
 
 #include<iostream>
 #include"Bitmap.h"
+#include"Mandelbrot.h"
+#include<cstdint>
 
 using namespace std;
 using namespace fractal;
@@ -24,8 +26,16 @@ int main() {
 			double xFractal{ (x - WIDTH/2) * (2.0/WIDTH) };
 			double yFractal{ (y - HEIGHT / 2) * (2.0 / HEIGHT) };
 
-			if (xFractal < min) min = xFractal;
-			if (xFractal > max) max = xFractal;
+			int iterations = Mandelbrot::getIteration(xFractal, yFractal);
+
+			uint8_t red = (uint8_t)(256 * (double)iterations / Mandelbrot::MAX_ITERATIONS);
+
+
+			
+			bitmap.setPixel(x, y, red, red, red);
+			
+			if (red < min) min = red;
+			if (red > max) max = red;
 
 		}
 	}
