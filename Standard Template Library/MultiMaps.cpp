@@ -15,8 +15,7 @@ int main() {
 	lookup.insert(make_pair(30, "Raj"));
 	lookup.insert(make_pair(20, "Bob"));
 
-	// multimap stores values with the same key unlike normal map
-	// not storing same key values and over writing the string
+	// multimap stores values with the same key unlike normal map not storing same key values and over writing the string
 
 	for (multimap<int, string>::iterator it = lookup.begin(); it != lookup.end(); it++) {
 		

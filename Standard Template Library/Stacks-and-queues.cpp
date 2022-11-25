@@ -40,7 +40,7 @@ int main() {
 	Test &test1 = testStack.top();
 	testStack.pop();
 	test1.print();
-	Reference refers to destroy objects
+	Reference refers to destroyed objects
 	*/
 	
 	while (testStack.size() > 0) {
