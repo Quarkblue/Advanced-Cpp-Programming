@@ -39,20 +39,37 @@ int main() {
 
 				histogram[iterations]++;
 			}
-			
-
-			uint8_t color = (uint8_t)(256 * (double)iterations / Mandelbrot::MAX_ITERATIONS);
-
-			color = color * color * color; // it will range from 0 to 255 because uint8_t has the range from 0 to 255 only
-			
-			bitmap.setPixel(x, y, 0, color, 0);
-			
-			if (color < min) min = color;
-			if (color > max) max = color;
 
 		}
 	}
 
+	int total = 0;
+	for (int i = 0; i < Mandelbrot::MAX_ITERATIONS; i++) {
+		total += histogram[i];
+	}
+
+	for (int y = 0; y < HEIGHT; y++) {
+		for (int x = 0; x < WIDTH; x++) {
+
+			int iterations = fractal[y * WIDTH + x];
+
+
+
+			double hue = 0.0;
+			for (int i = 0; i <= iterations; i++) {
+				hue += ((double)histogram[i])/total;
+			}
+
+			uint8_t red = 0;
+			uint8_t green = hue*255;
+			uint8_t blue = 0;
+			
+			
+			bitmap.setPixel(x, y, red, green, blue);
+
+			
+		}
+	}
 	
 	int count = 0;
 	for (int i = 0; i < Mandelbrot::MAX_ITERATIONS; i++) {
