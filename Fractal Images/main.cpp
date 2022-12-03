@@ -7,7 +7,7 @@
 #include"Mandelbrot.h"
 #include<cstdint>
 #include <math.h>
-#include "Zoom.h"
+#include "ZoomList.h"
 
 using namespace std;
 using namespace fractal;
