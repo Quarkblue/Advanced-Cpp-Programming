@@ -42,6 +42,9 @@
     <ClInclude Include="Fractal Images\Zoom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Fractal Images\ZoomList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Operator Overloading\Complex.cpp">
@@ -54,6 +57,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Fractal Images\Mandelbrot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Fractal Images\ZoomList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -8,6 +8,7 @@
 
 #include"Bitmap.h"
 #include"Mandelbrot.h"
+#include"Zoom.h"
 #include "ZoomList.h"
 
 using namespace std;
@@ -24,6 +25,10 @@ int main() {
 
 	double min = 99999;
 	double max = -99999;
+	
+	ZoomList zoomList(WIDTH, HEIGHT);
+	
+	zoomList.add(Zoom(WIDTH/2, HEIGHT/2, 1));
 
 	unique_ptr<int[]> histogram(new int[Mandelbrot::MAX_ITERATIONS]());
 	unique_ptr<int[]> fractal(new int[WIDTH * HEIGHT]());
@@ -81,13 +86,8 @@ int main() {
 	
 	int count = 0;
 	for (int i = 0; i < Mandelbrot::MAX_ITERATIONS; i++) {
-		cout << histogram[i] << " " << flush;
 		count += histogram[i];
 	}
-
-	cout << count << " : " << WIDTH * HEIGHT << endl;
-	
-	cout << endl;
 
 
 	bitmap.write("test.bmp");
