@@ -39,6 +39,9 @@
     <ClInclude Include="Fractal Images\Mandelbrot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Fractal Images\Zoom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Operator Overloading\Complex.cpp">

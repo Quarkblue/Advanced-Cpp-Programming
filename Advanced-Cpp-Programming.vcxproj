@@ -136,6 +136,7 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="Cpp%2711 New features\Ring.h" />
     <ClInclude Include="Template Classes and Functions\Template-class.h" />
+    <ClInclude Include="Fractal Images\Zoom.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Fractal Images\Bitmap.cpp" />
