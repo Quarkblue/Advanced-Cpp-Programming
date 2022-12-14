@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef ZOOM_H_
 #define ZOOM_H_
 
